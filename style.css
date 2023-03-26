@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+    overflow: hidden;
+}
+
+#menu {
+    background: #fff5e0;
+}
+
+.brand-logo {
+    mix-blend-mode: multiply;
+    padding: 0 2px;
+}
+
+.brand-logo img {
+    width: 240px;
+    margin-top: -40px;
+    margin-bottom: -55px;
+    margin-left: -20px;
+}
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    color: #303030;
+    font-weight: 300;
+    padding: 8px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 0;
+}
+
+#restaurant-item {
+    background: #e6edd8;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 1000px;
+    height: 35px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 22px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #808080;
+}
+
+.search-bar button img {
+    width: 30px;
+}
+
+.search-bar button {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.util {
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 79%;
+    margin-top: -2em;
+    cursor: pointer;
+}
+
+
