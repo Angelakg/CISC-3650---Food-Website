@@ -14,6 +14,21 @@ body {
     color: #000000;
 }
 
+img{
+    max-width: 100%;
+}
+
+a{
+    color: #303030;
+    text-decoration: none;
+}
+
+hr{
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
 .container {
     position: relative;
     width: 1440px;
@@ -25,21 +40,6 @@ body {
 }
 #menu {
     background: #fff5e0;
-}
-.title-container {
-    position: absolute;
-    width: 520px;
-    height: 57px;
-    left: 230px;
-    top: 100px;
-    font-family: 'Caudex', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 45px;
-    text-align: center;
-
-
 }
 
 .brand-logo {
@@ -57,61 +57,77 @@ body {
 
 .menu-item a {
     display: block;
-    text-decoration: none;
-    font-size: 19px;
-    color: #303030;
-    font-weight: 300;
+    margin: 12px 0;
     padding: 8px 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 12px 0;
+    font-size: 19px;
+    font-weight: 300;
 }
 
 #restaurant-item {
     background: #e6edd8;
 }
 
-.search-bar {
-    width: 100%;
-    max-width: 900px;
-    height: 35px;
-    background: rgb(255, 255, 255);
-    display: flex;
-    margin-top: 22px;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.search-bar input {
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 10px;
-    font-size: 20px;
-}
 
 ::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #808080;
 }
 
-.search-bar button img {
-    width: 30px;
-}
-
-.search-bar button {
-    border: 0;
-    width: 40px;
-    height: 40px;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
 .util {
     display: flex;
     justify-content:space-evenly;
     margin-left: 79%;
-    margin-top: -2em;
     cursor: pointer;
+    margin-top: 2em;
 }
 
+
+/* for styling the store cards*/
+
+.title-container {
+    margin-left: 2%;
+}
+
+/* Clear floats after the columns */
+.title-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title{
+    padding-left: 35px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 35px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.box {
+  padding: 2px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+}
 

@@ -10,36 +10,285 @@
 </head>
 <body>
     <div class="container" id="container">
-        
         <div id="menu">
             <div class="brand-logo">
                 <a href="index.html"> <img src="logo food hunter.png" alt="logo" > </a>
             </div>
             <div class="menu-item">
-                <a href="Nearby.html">Nearby Restaurants</a>
-                <a href="OnlineOrder.html">Order Food Online</a>
-                <a href="Recommended.html">  Restaurants</a>
+                <a href="Nearby.html">Nearby restaurants</a>
+                <a href="OnlineOrder.html">Online order friendly restaurants</a>
+                <a href="Recommended.html">Recommended restaurants</a>
             </div>
         </div>
 
-        <div class="title-container">
-            <p class="title">Restaurants Closest To You</h1>
-                <img src="./Images/pizzahut.png" class="pizzahut-img">
-                <img src="./Images/italian-bros.png" class="italianbros-img">
-                <img src="./Images/dallas-bbq.png" class="dallasbbq-img">
-        </div>
-
+        <!--The main area-->
         <div id="restaurant-item">
-            <div id="header">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search for restaurants">
-                    <button type="submit"><img src="search icon.png"></button>
+            <div class="util">
+                <i class="fa fa-heart-o"> <a href="Favorite.html">Favorite Store </a></i>
+                <i class="fa fa-user-circle" id="circle"> <a href="Login.html"> Account </a></i>
+            </div>
+
+            <!--Near by restaurants-->
+            <div class="title-container">
+                <p class="title">Restaurants Closest To You</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/pizzahut.png" class="pizzahut-img">
+                        <div class="box">
+                            <p>Pizza Hut</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="util">
-                    <i class="fa fa-heart-o"> Favorite Store</i>
-                    <i class="fa fa-user-circle" id="circle"> Account</i>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/italian-bros.png" class="italian-bros-img">
+                        <div class="box">
+                            <p>2181 Italian Bros Pizza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/dallas-bbq.png" class="dallas-bbq-img">
+                        <div class="box">
+                            <p>Dallas BBQ</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Restaurants With Short Wait Times </h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/ovi's-place.png" class="ovi's-place-img">
+                        <div class="box">
+                            <p>Ovi's Place</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/jupioca.png" class="jupioca-img">
+                        <div class="box">
+                            <p>Jupioca</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/subway.png" class="subway-img">
+                        <div class="box">
+                            <p>Subway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Restaurants With Good Reviews</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/picky-eaters.png" class="picky-eaters-img">
+                        <div class="box">
+                            <p>Picky Eaters</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/di-di.png" class="di-di-img">
+                        <div class="box">
+                            <p>Di Di</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/family-kitchen.png" class="family-kitchen-img">
+                        <div class="box">
+                            <p>Family Kitchen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Resturants With Free Delivery</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/pizzahut.png" class="pizzahut-img">
+                        <div class="box">
+                            <p>Pizza Hut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/di-di.png" class="di-di-img">
+                        <div class="box">
+                            <p>Di Di</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/napoli's-pizza.png" class="napoli's-pizza-img">
+                        <div class="box">
+                            <p>Napoli's Pizza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Resturants With Fastest Delivery</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/pizzahut.png" class="pizzahut-img">
+                        <div class="box">
+                            <p>Pizza Hut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/ovi's-place.png" class="ovi's-place-img">
+                        <div class="box">
+                            <p>Ovi's Place</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/dallas-bbq.png" class="dallas-bbq-img">
+                        <div class="box">
+                            <p>Dallas BBQ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Resturants With Pickup Service</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/chipotle.png" class="chipotle-img">
+                        <div class="box">
+                            <p>Chipotle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/panda-express.png" class="panda-express-img">
+                        <div class="box">
+                            <p>Panda Express</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/fishermans-cove.png" class="fishermans-cove-img">
+                        <div class="box">
+                            <p>Fisherman's Cove</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Fast Food Restaurants</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/mcdonald.png" class="mcdonald-img">
+                        <div class="box">
+                            <p>McDonald's</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/popeyes.png" class="popeyes-img">
+                        <div class="box">
+                            <p>Popeyes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/burger-king.png" class="burger-king-img">
+                        <div class="box">
+                            <p>Burger King</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Food Trucks</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/tacos-el-zocalo-de-tepango.png" class="tacos-el-zocalo-de-tepango-img">
+                        <div class="box">
+                            <p>Tacos El Zocalo De Tepango</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/best-halal-gyro-and-grill.png" class="best-halal-gyro-and-grill-img">
+                        <div class="box">
+                            <p>Best Halal Gyro & Grill</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/tacos-el-pollo.png" class="tacos-el-pollo-img">
+                        <div class="box">
+                            <p>Tacos El Pollo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">Cafés</h1>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/starbucks.png" class="starbucks-img">
+                        <div class="box">
+                            <p>Starbucks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/milk-and-honey-cafe.png" class="milk-and-honey-cafe-img">
+                        <div class="box">
+                            <p>Milk & Honey Cafe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="./Images/footprints-cafe-express.png" class="fotprints-cafe-express-img">
+                        <div class="box">
+                            <p>Footprint's Cafe Express</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
     </div>
 </body>
