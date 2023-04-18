@@ -1,7 +1,7 @@
 function addToFavorites(restaurantId) {
     const restaurant = document.getElementById(restaurantId);
     const name = restaurant.querySelector("p").innerText;
-    const imgSrc = restaurant.querySelector("img").src;
+    const imgSrc = restaurant.querySelector("img").getAttribute('src');
   
     const restaurantData = { id: restaurantId, name: name, img: imgSrc };
     let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -16,9 +16,9 @@ function addToFavorites(restaurantId) {
     favoriteButtons.forEach(button => {
         button.addEventListener('click', (event) => {
             const card = event.target.closest('.card');
-            const restaurantId = card.dataset.restaurantId;
+            const restaurantId = card.id;
             const restaurantName = card.querySelector('.box p').textContent;
-            const restaurantImage = card.querySelector('img').src;
+            const restaurantImage = card.querySelector('img').getAttribute('src');
     
             const restaurant = {
                 id: restaurantId,
@@ -41,4 +41,4 @@ function addToFavorites(restaurantId) {
             }
         });
     });
-}); 
+});
