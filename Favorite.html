@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food App</title>
+    <title>Favorite Restaurants</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,12 +20,35 @@
                 <a href="Recommended.html">Recommended restaurants</a>
             </div>
         </div>
-        <div id="restaurant-item">
-            <div class="util">
-                <i class="fa fa-heart-o"> <a href="Favorite.html">Favorite Store </a></i>
-                <i class="fa fa-user-circle" id="circle"> <a href="Login.html"> Account </a></i>
+        <div id="favorite-restaurants">
+            <h1>My Favorite Restaurants</h1>
+            <div class="favorite-list" id="favorite-list">
+                
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const favoriteList = document.getElementById('favorite-list');
+            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            favorites.forEach(restaurant => {
+                const restaurantDiv = document.createElement('div');
+                restaurantDiv.classList.add('restaurant-item');
+
+                const restaurantName = document.createElement('h2');
+                restaurantName.textContent = restaurant.name;
+
+                const restaurantImg = document.createElement('img');
+                restaurantImg.src = restaurant.image;
+                restaurantImg.alt = restaurant.name;
+
+                restaurantDiv.appendChild(restaurantName);
+                restaurantDiv.appendChild(restaurantImg);
+
+                favoriteList.appendChild(restaurantDiv);
+            });
+        });
+    </script>
 </body>
 </html>
