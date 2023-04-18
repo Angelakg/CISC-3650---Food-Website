@@ -83,8 +83,6 @@ hr{
 }
 
 
-/* for styling the store cards*/
-
 .title-container {
     margin-left: 2%;
 }
@@ -95,7 +93,25 @@ hr{
   display: table;
   clear: both;
 }
+.restaurant-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.favorite-btn {
+    background-color: #f1c40f;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 24px; 
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
 .title{
     padding-left: 35px;
     padding-bottom: 15px;
@@ -112,11 +128,11 @@ hr{
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -129,5 +145,43 @@ hr{
   padding: 2px 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 19px;
+}
+/* Favorite Restaurants Page */
+#favorite-restaurants {
+    padding: 2rem;
+    background-color: #e6edd8;
+}
+
+#favorite-restaurants h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restaurant-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+.restaurant-item h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: auto;
 }
 
