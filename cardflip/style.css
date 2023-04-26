@@ -1,0 +1,170 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    color: #000000;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: #303030;
+    text-decoration: none;
+}
+
+hr{
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+.container {
+    position: relative;
+    width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100%;
+}
+#menu {
+    background: #fff5e0;
+}
+
+.brand-logo {
+    mix-blend-mode: multiply;
+    padding: 0 2px;
+}
+
+
+.brand-logo img {
+    width: 240px;
+    margin-top: -40px;
+    margin-bottom: -55px;
+    margin-left: -20px;
+}
+
+.menu-item a {
+    display: block;
+    margin: 12px 0;
+    padding: 8px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+#restaurant-item {
+    background: #e6edd8;
+}
+
+
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #808080;
+}
+
+.util {
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 79%;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+
+/* for styling the store cards*/
+
+.title-container {
+    margin-left: 2%;
+}
+
+/* Clear floats after the columns */
+.title-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title{
+    padding-left: 35px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 35px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  padding: 2px 5px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* On mouse-over, flip card */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transform-origin: center;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  text-align: center;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 16px;
+}
+
+.flip-card-back {
+  background-color: #f1f1f1;
+  color: black;
+  width: 300px;
+  height: 295px;
+  transform: rotateY(180deg);
+  transform-origin: center;
+}
+
+/* Add some padding inside the card container */
+.box {
+  padding: 2px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 19px;
+}
