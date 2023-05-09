@@ -29,6 +29,11 @@ hr{
     margin-left: 2%;
     margin-right: 5%;
 }
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; 
+}
 .container {
     position: relative;
     width: 1440px;
@@ -236,4 +241,10 @@ hr{
 
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
+}
+
+.food-link{
+    color: #0000EE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; 
 }
