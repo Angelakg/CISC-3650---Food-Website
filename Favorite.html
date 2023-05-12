@@ -7,6 +7,7 @@
     <title>Favorite Restaurants</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="container" id="container">
@@ -28,11 +29,16 @@
         </div>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+       document.addEventListener('DOMContentLoaded', () => {
             const favoriteList = document.getElementById('favorite-list');
-            const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
             favorites.forEach(restaurant => {
+                const restaurantDiv = createRestaurantCard(restaurant);
+                favoriteList.appendChild(restaurantDiv);
+            });
+
+            function createRestaurantCard(restaurant) {
                 const restaurantDiv = document.createElement('div');
                 restaurantDiv.classList.add('restaurant-item');
 
@@ -43,12 +49,26 @@
                 restaurantImg.src = restaurant.image;
                 restaurantImg.alt = restaurant.name;
 
+                const deleteIcon = document.createElement('i');
+                deleteIcon.classList.add('fas', 'fa-trash', 'delete-icon');
+                deleteIcon.addEventListener('click', () => removeFavorite(restaurant.id, restaurantDiv));
+
                 restaurantDiv.appendChild(restaurantName);
                 restaurantDiv.appendChild(restaurantImg);
+                restaurantDiv.appendChild(deleteIcon);
 
-                favoriteList.appendChild(restaurantDiv);
-            });
+                return restaurantDiv;
+            }
+
+            function removeFavorite(restaurantId, cardToRemove) {
+                favorites = favorites.filter(fav => fav.id !== restaurantId);
+
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+
+                favoriteList.removeChild(cardToRemove);
+            }
         });
+
     </script>
 </body>
 </html>
