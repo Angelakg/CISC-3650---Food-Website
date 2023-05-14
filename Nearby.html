@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="container" id="container">
         <div id="menu">
             <div class="brand-logo">
-                <a href="index.html"> <img src="logo food hunter.png" alt="logo" > </a>
+                <a href="index.html"> <img src="logo food hunter.png" alt="logo"> </a>
             </div>
             <div class="menu-item">
                 <a href="Nearby.html">Nearby restaurants</a>
@@ -45,18 +47,23 @@
                             </div>
                             <div class="back">
                                 <div class="card-body">
-                                    <a class="food-link" href="https://www.chipotle.com/" >
+                                    <a class="food-link" href="https://www.chipotle.com/" tabindex="0" role="link"
+                                        aria-label="Visit chipotle website">>
                                         Website
                                     </a>
                                     <br>
                                     <br>
-                                    <p> Address</p>
+                                    <p class="address"> Address</p>
                                     <p> 2166 Nostrand Ave., Brooklyn, NY 11210</p>
                                     <br>
-                                    <p> Distance from campus: 0.3</p>
-                                    <p> Can order online: Yes</p>
-                                    <p> Can check wait times: No </p>
-                                    <p> Can reserve table: No</p>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.3</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -76,18 +83,23 @@
                             </div>
                             <div class="back">
                                 <div class="card-body">
-                                    <a class="food-link" href="https://www.applebees.com/en" >
+                                    <a class="food-link" href="https://www.applebees.com/en" tabindex="0" role="link"
+                                        aria-label="Visit applebees website">>
                                         Website
                                     </a>
                                     <br>
                                     <br>
-                                    <p> Address</p>
+                                    <p class="address"> Address</p>
                                     <p> 2201 Nostrand Ave., Brooklyn, NY 11210</p>
                                     <br>
-                                    <p> Distance from campus: 0.3</p>
-                                    <p> Can order online: Yes</p>
-                                    <p> Can check wait times: No </p>
-                                    <p> Can reserve table: No</p>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.3</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -107,18 +119,23 @@
                             </div>
                             <div class="back">
                                 <div class="card-body">
-                                    <a class="food-link" href="https://ovisplaceny.com/" >
+                                    <a class="food-link" href="https://ovisplaceny.com/" tabindex="0" role="link"
+                                        aria-label="Visit ovis place ny website">>
                                         Website
                                     </a>
                                     <br>
                                     <br>
-                                    <p> Address</p>
+                                    <p class="address"> Address</p>
                                     <p> 2925 Avenue H, Brooklyn, NY 11210</p>
                                     <br>
-                                    <p> Distance from campus: 0.3</p>
-                                    <p> Can order online: Yes</p>
-                                    <p> Can check wait times: No </p>
-                                    <p> Can reserve table: No</p>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.3</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -127,70 +144,81 @@
             </div>
             <!--next row-->
             <div class="title-container">
-                <p class="title"></h1>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-7">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/picky-eaters.png" class="picky-eaters-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Picky Eaters</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.pickyeatersnyc.com/about-us" >
-	                                        Website
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 1456 Flatbush Ave, Brooklyn, NY 11210</p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.4</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-		                <div class="card flip-container" id="restaurant-24">
-		                    <div class="flipper">
-		                        <div class="front">
-		                            <img src="./Images/ashoka-grill.png" class="ashoka-grill-img">
-		                            <div class="restaurant-header">
-		                                <div class="box">
-		                                    <p>Ashoka Grill</p>
-		                                </div>
-		                                <button class="favorite-btn">♡</button>
-		                            </div>
-		                        </div>
-		                        <div class="back">
-		                            <div class="card-body">
-		                                <a class="food-link" href="https://www.pickyeatersnyc.com/about-us" >
-		                                    Website
-		                                </a>
-		                                <br>
-		                                <br>
-		                                <p> Address</p>
-		                                <p> 1436 Flatbush Ave, Brooklyn, NY 11210</p>
-		                                <br>
-		                                <p> Distance from campus: 0.4</p>
-		                                <p> Can order online: Yes</p>
-		                                <p> Can check wait times: No </p>
-		                                <p> Can reserve table: No</p>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-                    <div class="column">
+                <p class="title">
+                    </h1>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-7">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/picky-eaters.png" class="picky-eaters-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Picky Eaters</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.pickyeatersnyc.com/about-us" tabindex="0" role="link"
+                                        aria-label="Visit picky eaters nyc website">>
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1456 Flatbush Ave, Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-24">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/ashoka-grill.png" class="ashoka-grill-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Ashoka Grill</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://orderashokagrill.com/" tabindex="0" role="link"
+                                        aria-label="Visit ashoka grill website">
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1436 Flatbush Ave, Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
                     <div class="card flip-container" id="restaurant-25">
                         <div class="flipper">
                             <div class="front">
@@ -204,18 +232,23 @@
                             </div>
                             <div class="back">
                                 <div class="card-body">
-                                    <a class="food-link" href="https://www.yelp.com/biz/island-burger-brooklyn-4" >
+                                    <a class="food-link" href="https://www.yelp.com/biz/island-burger-brooklyn-4" tabindex="0" role="link"
+                                    aria-label="Visit island burger website">
                                         Yelp
                                     </a>
                                     <br>
                                     <br>
-                                    <p> Address</p>
+                                    <p class="address"> Address</p>
                                     <p> 2093 Nostrand Ave., Brooklyn, NY 11210</p>
                                     <br>
-                                    <p> Distance from campus: 0.4</p>
-                                    <p> Can order online: Yes</p>
-                                    <p> Can check wait times: No </p>
-                                    <p> Can reserve table: No</p>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -224,263 +257,307 @@
             </div>
             <!--next row-->
             <div class="title-container">
-                <p class="title"></h1>
-                	<div class="column">
-		                <div class="card flip-container" id="restaurant-26">
-		                    <div class="flipper">
-		                        <div class="front">
-		                            <img src="./Images/starspice.png" class="starspice-img">
-		                            <div class="restaurant-header">
-		                                <div class="box">
-		                                    <p>Starspice</p>
-		                                </div>
-		                                <button class="favorite-btn">♡</button>
-		                            </div>
-		                        </div>
-		                        <div class="back">
-		                            <div class="card-body">
-		                                <a class="food-link" href="https://starspicerestaurant.com/index.html" >
-		                                    Website
-		                                </a>
-		                                <br>
-		                                <br>
-		                                <p> Address</p>
-		                                <p> 1501 Flatbush Ave, Brooklyn, NY 11210</p>
-		                                <br>
-		                                <p> Distance from campus: 0.4</p>
-		                                <p> Can order online: Yes</p>
-		                                <p> Can check wait times: No </p>
-		                                <p> Can reserve table: Yes</p>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-                    </div>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-27">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/best-wok.png" class="best-wok-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Best Wok No. 1</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.yelp.com/biz/best-wok-no-1-brooklyn" >
-	                                        Yelp
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 3411 Avenue H STE A, Brooklyn, NY 11210 </p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.5</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-                        <div class="card flip-container" id="restaurant-10">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="./Images/napoli's-pizza.png" class="napoli's-pizza-img">
-                                    <div class="restaurant-header">
-                                        <div class="box">
-                                            <p>Napoli's Pizza</p>
-                                        </div>
-                                        <button class="favorite-btn">♡</button>
+                <p class="title">
+                    </h1>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-26">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/starspice.png" class="starspice-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Starspice</p>
                                     </div>
+                                    <button class="favorite-btn">♡</button>
                                 </div>
-                                <div class="back">
-                                    <div class="card-body">
-                                        <a class="food-link" href="https://www.napolipizza.getsauce.com/?utm_source=GMB&utm_medium=Website%20button&utm_id=Napoli%20Pizza" >
-                                            Website
-                                        </a>
-                                        <br>
-                                        <br>
-                                        <p> Address</p>
-                                        <p> 2270 Nostrand Ave., Brooklyn, NY 11210</p>
-                                        <br>
-                                        <p> Distance from campus: 0.4</p>
-                                        <p> Can order online: No</p>
-                                        <p> Can check wait times: No </p>
-                                        <p> Can reserve table: No</p>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://starspicerestaurant.com/index.html" tabindex="0" role="link"
+                                        aria-label="Visit starspice restaurant website">>
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1501 Flatbush Ave, Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: Yes</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-            </div>
-            <!--next row-->
-            <div class="title-container">
-                <p class="title"></h1>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-28">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/good-hope.png" class="good-hope-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Good Hope</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.yelp.com/biz/good-hope-brooklyn" >
-	                                        Website
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 1683 Flatbush Ave, Brooklyn, NY 11210 </p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.6</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-8">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/di-di.png" class="di-di-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Di Di</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.yelp.com/biz/di-di-restaurant-brooklyn" >
-	                                        Yelp Page
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 2318 Nostrand Ave., Brooklyn, NY 11210</p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.4</p>
-	                                    <p> Can order online: No</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-                        <div class="card flip-container" id="restaurant-22">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="./Images/footprints-cafe-express.png" class="footprints-cafe-express-img">
-                                    <div class="restaurant-header">
-                                        <div class="box">
-                                            <p>Footprint's Cafe</p>
-                                        </div>
-                                        <button class="favorite-btn">♡</button>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-27">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/best-wok.png" class="best-wok-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Best Wok No. 1</p>
                                     </div>
+                                    <button class="favorite-btn">♡</button>
                                 </div>
-                                <div class="back">
-                                    <div class="card-body">
-                                        <a href="https://footprintscafenyc.com/flatbush/" >
-                                            Website
-                                        </a>
-                                        <br>
-                                        <br>
-                                        <p> Address</p>
-                                        <p> 1377 Flatbush Ave, Brooklyn, NY 11210</p>
-                                        <br>
-                                        <p> Distance from campus: .5</p>
-                                        <p> Can order online: Yes</p>
-                                        <p> Can check wait times: No </p>
-                                        <p> Can reserve table: No</p>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.yelp.com/biz/best-wok-no-1-brooklyn" tabindex="0" role="link"
+                                    aria-label="Visit best wok number 1 website">
+                                        Yelp
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 3411 Avenue H STE A, Brooklyn, NY 11210 </p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.5</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-10">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/napoli's-pizza.png" class="napoli's-pizza-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Napoli's Pizza</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link"
+                                        href="https://www.napolipizza.getsauce.com/?utm_source=GMB&utm_medium=Website%20button&utm_id=Napoli%20Pizza" tabindex="0" role="link"
+                                        aria-label="Visit napoli pizza website"> 
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 2270 Nostrand Ave., Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: No</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--next row-->
             <div class="title-container">
-                <p class="title"></h1>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-9">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/family-kitchen.png" class="family-kitchen-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Family Kitchen</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.familykitchenonline.com/" >
-	                                        Website
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 1709 Foster Ave, Brooklyn, NY 11230</p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.7</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-29">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/don-burrito.png" class="don-burrito-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>Don Burrito</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.yelp.com/biz/don-burrito-brooklyn" >
-	                                        Yelp
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 5 Newkirk Plaza, Brooklyn, NY 11226</p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.8</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: No</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
+                <p class="title">
+                    </h1>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-28">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/good-hope.png" class="good-hope-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Good Hope</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.yelp.com/biz/good-hope-brooklyn" tabindex="0" role="link"
+                                        aria-label="Visit good hope website">
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1683 Flatbush Ave, Brooklyn, NY 11210 </p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.6</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-8">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/di-di.png" class="di-di-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Di Di</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.yelp.com/biz/di-di-restaurant-brooklyn" tabindex="0" role="link"
+                                    aria-label="Visit di di restaurant website">
+                                        Yelp Page
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 2318 Nostrand Ave., Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.4</p>
+                                        <p class="detail"> Can order online: No</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-22">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/footprints-cafe-express.png" class="footprints-cafe-express-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Footprint's Cafe</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://footprintscafenyc.com/flatbush/" tabindex="0" role="link"
+                                        aria-label="Visit footprints cafe nyc website">>
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1377 Flatbush Ave, Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: .5</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--next row-->
+            <div class="title-container">
+                <p class="title">
+                    </h1>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-9">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/family-kitchen.png" class="family-kitchen-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Family Kitchen</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.familykitchenonline.com/" tabindex="0" role="link"
+                                        aria-label="Visit family kitchen online website">>
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1709 Foster Ave, Brooklyn, NY 11230</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.7</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-29">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/don-burrito.png" class="don-burrito-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Don Burrito</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.yelp.com/biz/don-burrito-brooklyn" tabindex="0" role="link"
+                                    aria-label="Visit don burrito website">
+                                        Yelp
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 5 Newkirk Plaza, Brooklyn, NY 11226</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.8</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="column">
                     <div class="card flip-container" id="restaurant-30">
                         <div class="flipper">
@@ -495,18 +572,23 @@
                             </div>
                             <div class="back">
                                 <div class="card-body">
-                                    <a class="food-link" href="https://www.yelp.com/biz/pablos-restaurant-brooklyn" >
+                                    <a class="food-link" href="https://www.yelp.com/biz/pablos-restaurant-brooklyn" tabindex="0" role="link"
+                                    aria-label="Visit pablos restaurant website">
                                         Yelp
                                     </a>
                                     <br>
                                     <br>
-                                    <p> Address</p>
+                                    <p class="address"> Address</p>
                                     <p> 43 Newkirk Plaza, Brooklyn, NY 11226</p>
                                     <br>
-                                    <p> Distance from campus: 0.8</p>
-                                    <p> Can order online: Yes</p>
-                                    <p> Can check wait times: Yes </p>
-                                    <p> Can reserve table: No</p>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.8</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: Yes </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -515,100 +597,116 @@
             </div>
             <!--next row-->
             <div class="title-container">
-                <p class="title"></h1>
-                    <div class="column">
-	                    <div class="card flip-container" id="restaurant-31">
-	                        <div class="flipper">
-	                            <div class="front">
-	                                <img src="./Images/fishermans-cove.png" class="fishermans-cove-img">
-	                                <div class="restaurant-header">
-	                                    <div class="box">
-	                                        <p>El Paso Mexican Grill</p>
-	                                    </div>
-	                                    <button class="favorite-btn">♡</button>
-	                                </div>
-	                            </div>
-	                            <div class="back">
-	                                <div class="card-body">
-	                                    <a class="food-link" href="https://www.yelp.com/biz/el-paso-mexican-grill-brooklyn" >
-	                                        Website
-	                                    </a>
-	                                    <br>
-	                                    <br>
-	                                    <p> Address</p>
-	                                    <p> 1610 Newkirk Ave, Brooklyn, NY 11226</p>
-	                                    <br>
-	                                    <p> Distance from campus: 0.8</p>
-	                                    <p> Can order online: Yes</p>
-	                                    <p> Can check wait times: No </p>
-	                                    <p> Can reserve table: Yes</p>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-                    <div class="column">
-                        <div class="card flip-container" id="restaurant-14">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="./Images/mcdonald.png" class="mcdonald-img">
-                                    <div class="restaurant-header">
-                                        <div class="box">
-                                            <p>McDonald's</p>
-                                        </div>
-                                        <button class="favorite-btn">♡</button>
+                <p class="title">
+                    </h1>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-31">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/fishermans-cove.png" class="fishermans-cove-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>El Paso Mexican Grill</p>
                                     </div>
+                                    <button class="favorite-btn">♡</button>
                                 </div>
-                                <div class="back">
-                                    <div class="card-body">
-                                        <a class="food-link" href="https://www.mcdonalds.com/us/en-us.html" >
-                                            Website
-                                        </a>
-                                        <br>
-                                        <br>
-                                        <p> Address</p>
-                                        <p> 2154 Nostrand Ave., Brooklyn, NY 11210</p>
-                                        <br>
-                                        <p> Distance from campus: 0.3</p>
-                                        <p> Can order online: Yes</p>
-                                        <p> Can check wait times: No </p>
-                                        <p> Can reserve table: No</p>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="http://fishermanscovenostrandave.mobile-webview2.com/index.php" tabindex="0" role="link"
+                                        aria-label="Visit fishermans cove website">
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 1610 Newkirk Ave, Brooklyn, NY 11226</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.8</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: Yes</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card flip-container" id="restaurant-32">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="./Images/brooklyns-best-eats.png" class="brooklyns-best-eats-img">
-                                    <div class="restaurant-header">
-                                        <div class="box">
-                                            <p>Best Eats</p>
-                                        </div>
-                                        <button class="favorite-btn">♡</button>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-14">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/mcdonald.png" class="mcdonald-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>McDonald's</p>
                                     </div>
+                                    <button class="favorite-btn">♡</button>
                                 </div>
-                                <div class="back">
-                                    <div class="card-body">
-                                        <a class="food-link" href="https://www.yelp.com/biz/brooklyns-best-eats-brooklyn-3" >
-                                            Yelp
-                                        </a>
-                                        <br>
-                                        <br>
-                                        <p> Address</p>
-                                        <p> 23 Hillel Pl, Brooklyn, NY 11210</p>
-                                        <br>
-                                        <p> Distance from campus: 0.3</p>
-                                        <p> Can order online: Yes</p>
-                                        <p> Can check wait times: No </p>
-                                        <p> Can reserve table: No</p>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.mcdonalds.com/us/en-us.html" tabindex="0" role="link"
+                                        aria-label="Visit Mcdonald's website">
+                                        Website
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 2154 Nostrand Ave., Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.3</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="column">
+                    <div class="card flip-container" id="restaurant-32">
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="./Images/brooklyns-best-eats.png" class="brooklyns-best-eats-img">
+                                <div class="restaurant-header">
+                                    <div class="box">
+                                        <p>Best Eats</p>
+                                    </div>
+                                    <button class="favorite-btn">♡</button>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="card-body">
+                                    <a class="food-link" href="https://www.yelp.com/biz/brooklyns-best-eats-brooklyn-3" tabindex="0" role="link"
+                                        aria-label="Visit brooklyn best eats website">
+                                        Yelp
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <p class="address"> Address</p>
+                                    <p> 23 Hillel Pl, Brooklyn, NY 11210</p>
+                                    <br>
+                                    <div class="detail-box">
+                                        <p class="info"> Info:</p>
+                                        <p class="detail"> Distance from campus: 0.3</p>
+                                        <p class="detail"> Can order online: Yes</p>
+                                        <p class="detail"> Can check wait times: No </p>
+                                        <p class="detail"> Can reserve table: No</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -622,4 +720,5 @@
         });
     </script>
 </body>
+
 </html>
