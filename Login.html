@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="container" id="container">
         <div id="menu">
             <div class="brand-logo">
-                <a href="index.html"> <img src="logo food hunter.png" alt="logo" > </a>
+                <a href="index.html"> <img src="logo food hunter.png" alt="logo"> </a>
             </div>
             <div class="menu-item">
                 <a href="Nearby.html">Nearby restaurants</a>
@@ -24,21 +26,26 @@
         <div id="restaurant-item">
             <div id="header">
                 <div class="util">
-                    <i class="fa fa-heart-o"> <a href="Favorite.html">Favorite Store </a></i>
-                    <i class="fa fa-user-circle" id="circle"> <a href="Login.html"> Account </a></i>
+                    <a href="Favorite.html">
+                        <div class="fav"><i class="fa fa-heart-o"> Favorite Store</i></div>
+                    </a>
+                    <a href="Signin.html">
+                        <div class="account"><i class="fa fa-user-circle"> Log In</i></div>
+                    </a>
                 </div>
             </div>
             <div class="container">
                 <div id="form">
                     <form>
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname">
-                </form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
